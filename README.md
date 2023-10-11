@@ -59,3 +59,5 @@ curl https://<YOUR_SPRING_FUNCTION_NAME>.azurewebsites.net/api/hello?name=Azure
 ```
 
 Replace the `<YOUR_SPRING_FUNCTION_NAME>` part by the name of your Spring Function.
+
+TASKKILL /IM func.exe /T /F

@@ -21,6 +21,9 @@ public class HelloHandler extends FunctionInvoker<User, Greeting> {
                 .orElseGet(() -> new User(
                         request.getQueryParameters()
                                 .getOrDefault("name", "world")));
+        String token = request.getHeaders().get("authorization");
+        user.setToken(token);
+        context.getLogger().info(request.getHeaders().toString());
         context.getLogger().info("Greeting user name: " + user.getName());
         return request
                 .createResponseBuilder(HttpStatus.OK)

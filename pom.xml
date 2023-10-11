@@ -26,10 +26,10 @@
         <azure.functions.maven.plugin.version>1.14.2</azure.functions.maven.plugin.version>
 
         <!-- customize those two properties. The functionAppName should be unique across Azure -->
-        <functionResourceGroup>my-spring-function-resource-group</functionResourceGroup>
-        <functionAppName>my-spring-function</functionAppName>
+        <functionResourceGroup>rg-azuser530_mml.local-ovZsT</functionResourceGroup>
+        <functionAppName>my-spring-function2023yashsaxena2610</functionAppName>
 
-        <functionAppRegion>westeurope</functionAppRegion>
+        <functionAppRegion>westus</functionAppRegion>
         <stagingDirectory>${project.build.directory}/azure-functions/${functionAppName}</stagingDirectory>
         <start-class>com.example.DemoApplication</start-class>
     </properties>
